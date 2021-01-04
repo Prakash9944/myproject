@@ -2,4 +2,6 @@
 
 # npm install
 
+# run node server
+
 # nodemon server.js
