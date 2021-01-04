@@ -21,9 +21,12 @@
 2. siginUp Json and select application type would be json
 
     {
-        username: "Prakash",
-        email: "prakash@gmail.com",
-        password: "prakashraj"
+        "username": "raj",
+        "email": "prakashraj@gmail.com",
+        "password": "prakashraj",
+        "role": "owner",
+        "phone": 995577799,
+        "company": "test"
     }
 
 3. siginIN Json
