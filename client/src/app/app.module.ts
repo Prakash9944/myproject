@@ -10,6 +10,9 @@ import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AppRoutingModule } from './/app-routing.module';
     LoginComponent,
     AboutComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    HeaderComponent,
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
