@@ -2,7 +2,8 @@ const User = require('../../models/User');
 const hashing = require ("../../helpers/hashing");
 const tokenGen = require ("../../helpers/token");
 const authVerify= require ("../../helpers/authverify");
-
+const fieldEncryption = require('mongoose-field-encryption')
+const bcrypt = require('bcryptjs');
 exports.createUser = async function (req, res) {
 
     if (!req.body.username) {return res.send("username is required")};
@@ -61,4 +62,18 @@ exports.signInUser = async function (req, res) {
 
 exports.getCall = function (req, res) {
     res.send("I am Protected");
+}
+
+
+
+exports.getUser =  function (req, res) {
+
+
+    User.findOne({_id: req.params.id}, async function (err, user) {
+        if (err) {
+            console.error(err);
+        }
+
+        res.status(200).send(data)
+    })
 }

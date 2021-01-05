@@ -1,4 +1,7 @@
 const mongoose = require ("mongoose");
+const mongooseFieldEncryption = require("mongoose-field-encryption").fieldEncryption;
+// console.log("mongooseFieldEncryption", mongooseFieldEncryption)
+
 const userSchema = new mongoose.Schema({
 
     username: {
@@ -17,7 +20,7 @@ const userSchema = new mongoose.Schema({
     },
 
     phone: Number,
-    company: String,
+    address: String,
     role: {
         type: String,
         "enum": [
@@ -29,4 +32,5 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+userSchema.plugin(mongooseFieldEncryption, { fields: ["phone", "email"], secret: "nodejs" });
 module.exports = mongoose.model("User", userSchema);
