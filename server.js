@@ -8,7 +8,7 @@ connectDB();
 app.use(cookieParser());
 app.use(express.json());
 app.use('/api', routes);
-
+//agdssad
 app.listen(5000, function () {
     console.log(`server started....`);
 });
