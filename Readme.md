@@ -5,8 +5,8 @@
 1. Install dependencies (one time only)
 
    $ npm install
-
-2. run node server
+  
+2. run node serverddd
 
    $ nodemon server.js
 
