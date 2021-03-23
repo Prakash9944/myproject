@@ -32,5 +32,5 @@ const userSchema = new mongoose.Schema({
     }
 });
 
-userSchema.plugin(mongooseFieldEncryption, { fields: ["phone", "email"], secret: "nodejs" });
+// userSchema.plugin(mongooseFieldEncryption, { fields: ["phone", "email"], secret: "nodejs" });
 module.exports = mongoose.model("User", userSchema);

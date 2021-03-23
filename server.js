@@ -9,6 +9,7 @@ app.use(cookieParser());
 app.use(express.json());
 app.use('/api', routes);
 //agdssad
+//asdas
 app.listen(5000, function () {
-    console.log(`server started....`);
+    console.log(`server started....werwrewrewrewrewrew`);
 });

@@ -15,6 +15,7 @@ exports.tokenValidator = async function (token) {
 
     try {
         const data = await jwt.verify(token, process.env.JWT_KEY);
+        console.log("data", data)
         return data;
     } catch (err) {
         return false;
